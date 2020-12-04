@@ -1,5 +1,11 @@
-.App {
+body {
   text-align: center;
+  /* background-color: pink; */
+}
+
+input {
+  background-color: orange;
+  color: white;
 }
 
 .App-header {
@@ -11,4 +17,28 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+td:nth-child(even) {background-color: #f2f2f2;}
+
+h1 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.form {
+  padding: 7px;
+  border: 1px solid black;
+  text-align:left;
+  margin-left: 10px;
 }
