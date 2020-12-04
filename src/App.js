@@ -13,9 +13,35 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <p>Flask says {placeholder[0][1]}</p>
-      </header>
+      </header> */}
+      <h2>Pets</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Owner</th>
+            <th>Breed</th>
+            <th>Color</th>
+            <th>Checked In?</th>
+            <th>Checked In Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{placeholder[0][1]}</td>
+            <td>{placeholder[0][2]}</td>
+            <td>{placeholder[0][3]}</td>
+            <td>{placeholder[0][4]}</td>
+            <td>{placeholder[0][5]?
+            "Purple"
+            :
+            "Red"}</td>
+            <td>{placeholder[0][6]}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
